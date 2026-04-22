@@ -5,33 +5,39 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Witze App</title>
-    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="dist/styles.css" />
   </head>
   <body>
     <div id="app">
       <h1 class="heading">Witze App</h1>
-      <div class="joke-container">
-        <div class="current_joke">
-          <p class="current_joke__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consectetur, mollitia!
-          </p>
-        </div>
-        <div class="current_joke__actions">
-          <a href="#" class="current_joke__loadNewJoke">Neuen Witz laden</a>
-          <a href="#" class="current_joke__storeJoke">Witz speichern</a>
+      <div class="current-joke">
+        <p class="current-joke__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
+          mollitia!
+        </p>
+        <div class="current-joke__actions">
+          <button href="#" class="current-joke__loadNewJoke">
+            Neuen Witz laden
+          </button>
+          <button href="#" class="current-joke__storeJoke">
+            Witz speichern
+          </button>
         </div>
       </div>
-      <h2>Gespeicherte Witze</h2>
-      <div class="joke-list">
-        <div class="joke-list__joke">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
-          mollitia!
-        </div>
-        <div class="joke-list__joke">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
-          mollitia!
-        </div>
+    </div>
+    <h2>Gespeicherte Witze</h2>
+    <div class="joke-list">
+      <div class="joke-list__joke">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
+        mollitia!
+      </div>
+      <div class="joke-list__joke">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
+        mollitia!
+      </div>
+      <div class="joke-list__joke">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
+        mollitia!
       </div>
     </div>
   </body>

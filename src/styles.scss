@@ -1,4 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Scribble&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Scribble&display=swap");
+
+$primary-color: green;
+$secondary-color: white;
+
+$primary-font: "Rubik Scribble", sans-serif;
+$secondary-font: "Inter", sans-serif;
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #222;
+  font-family: $secondary-font;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all children horizontally */
+  min-height: 40vh;
+}
+
+h1 {
+  color: $primary-color;
+  font-family: $primary-font;
+}
+
+h2 {
+  color: $secondary-color;
+  font-family: $primary-font;
+  text-align: center;
+}
+
+/* Corrected Nesting */
+.current-joke {
+  color: #888;
+  background-color: #555;
+  max-width: 550px;
+  padding: 2rem;
+  text-align: center;
+
+  &__text {
+    color: $secondary-color;
+    margin-bottom: 1.5rem;
+  }
+
+  &__actions {
+    display: flex; /* Forces buttons into a row */
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+  }
+}
+
+.joke-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all children horizontally */
+  text-align: center;
+  padding: 2rem;
+
+  &__joke {
+    display: flex;
+    background-color: #555;
+    border: 1px solid blue;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center; /* Centers all children horizontally */
+    max-width: 550px;
+    color: $secondary-color;
+    gap: 2em;
+  }
+}
+
+button {
+  background-color: $primary-color;
+  color: black;
+  padding: 2rem;
+  border-radius: 5px;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+  }
 }
