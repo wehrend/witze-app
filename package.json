@@ -10,9 +10,7 @@
     "sass": "sass --watch styles:output"
   },
   "devDependencies": {
+    "sass": "^1.99.0",
     "vite": "^8.0.9"
-  },
-  "dependencies": {
-    "sass": "^1.99.0"
   }
 }
