@@ -70,8 +70,11 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-  }
 
+    &--disabled {
+      display: none;
+    }
+  }
   &__icon {
     width: 1.5rem;
   }
